@@ -1,20 +1,23 @@
 footer {
-  background-color: var(--light-color);
+  background-color: #202020;
+  color: #ebebeb;
+  margin-top: 3rem;
+  padding: 1rem 0 1.5rem;
   font-size: var(--body-font-size-xs);
 }
 
-footer .footer > div {
+footer .footer>div {
   margin: auto;
   max-width: 1200px;
-  padding: 40px 24px 24px;
+  padding: 12px 24px 24px;
 }
 
 footer .footer p {
-  margin: 0;
+  margin-bottom: 5px;
 }
 
-@media (width >= 900px) {
-  footer .footer > div {
-    padding: 40px 32px 24px;
+@media (width >=900px) {
+  footer .footer>div {
+    padding: 10px 32px 24px;
   }
 }

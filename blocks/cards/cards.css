@@ -1,4 +1,4 @@
-.cards > ul {
+.cards>ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -7,8 +7,8 @@
   grid-gap: 24px;
 }
 
-.cards > ul > li {
-  border: 1px solid #dadada;
+.cards>ul>li {
+  border: none;
   background-color: var(--background-color);
 }
 
@@ -20,7 +20,7 @@
   line-height: 0;
 }
 
-.cards > ul > li img {
+.cards>ul>li img {
   width: 100%;
   aspect-ratio: 4 / 3;
   object-fit: cover;
