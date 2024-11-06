@@ -460,3 +460,66 @@ main>.magazine-section>.default-content-wrapper {
 main>.section-recent-articles>.default-content-wrapper {
   padding: 10px 40px;
 }
+
+main>.section>.default-content-wrapper>h1,
+h2 {
+  font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+  font-weight: normal;
+  margin-bottom: 13.5px;
+  margin-top: 27px;
+}
+
+main>.section>.default-content-wrapper>h1,
+h2:after {
+  border-bottom: 2px solid #ffea00;
+  content: "";
+  display: block;
+  padding-top: 8px;
+  width: 84px;
+}
+
+
+/* For mobile phones: */
+/* For registraion form: */
+@media only screen and (max-width: 768px) {
+  main>.section-registration-form>.default-content-wrapper {
+    margin: 0;
+    padding: 10px;
+  }
+
+  main>.section-registration-form>.form-wrapper {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid gray;
+    margin: 10px;
+  }
+
+  /* for about us section*/
+  main>.section-about-us>.default-content-wrapper {
+    padding: 0px 15px;
+    line-height: 2;
+  }
+
+  main>.section-about-us>.default-content-wrapper>p,
+  dl,
+  ol,
+  ul,
+  pre,
+  blockquote {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+
+  main>.section-about-us>.default-content-wrapper>h1:after {
+    border-bottom: 2px solid #ffea00;
+    content: "";
+    display: block;
+    padding-top: 8px;
+    width: 140px;
+  }
+
+  main>.section-about-us>.default-content-wrapper>h1,
+  h2 {
+    font-size: xx-large;
+  }
+}

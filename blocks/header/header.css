@@ -60,6 +60,7 @@ header nav .nav-hamburger {
   height: 22px;
   display: flex;
   align-items: center;
+  margin: 40px 10px;
 }
 
 header nav .nav-hamburger button {
@@ -133,6 +134,115 @@ header nav[aria-expanded='true'] .nav-hamburger-icon::after {
     display: none;
     visibility: hidden;
   }
+}
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  header .nav-brand {
+    position: absolute;
+  }
+
+  header nav .nav-sections {
+    margin-top: -65px;
+    margin-left: 55px;
+  }
+
+  header nav a picture img {
+    max-width: 8rem;
+    height: auto;
+  }
+
+  header nav .form-wrapper {
+    margin-top: -220px;
+    margin-left: 160px;
+  }
+
+  header nav .nav-sections ul {
+    line-height: 2;
+  }
+
+  main>.section:first-of-type {
+    margin-top: 0px;
+  }
+
+  .carousel .carousel-slide .carousel-slide-image picture>img {
+    height: 50%;
+  }
+
+  .carousel .carousel-slide .carousel-slide-content {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    margin-top: 230px;
+  }
+
+  main>.section>.default-content-wrapper>h1,
+  h2 {
+    font-size: xx-large;
+  }
+
+  main>.section>.default-content-wrapper>p,
+  dl,
+  ol,
+  ul,
+  pre,
+  blockquote {
+    font-size: 18px;
+  }
+
+  .carousel .carousel-slide-indicators {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  footer>.footer>div>div>.default-content-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    margin-top: 0;
+    padding: 0;
+  }
+
+  footer>.footer>div>div>.default-content-wrapper>ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    line-height: 3;
+    margin-top: 10px;
+  }
+
+  footer .footer p {
+    margin-bottom: 5px;
+    font-size: 12px;
+  }
+
+  main>.magazine-section>.columns-wrapper>.columns>div {
+    gap: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  main>.magazine-section>.columns-wrapper>.columns>div>.columns-img-col {
+    order: 1;
+  }
+
+  main>.magazine-section>.columns-wrapper>.columns>div>div>p {
+    font-size: 14px;
+  }
+
+  main>.magazine-section>.columns-wrapper>.columns div:nth-child(2) {
+    padding: 0.5em 1.5em 2em;
+    max-width: 100%;
+  }
+
+  main>.magazine-section>.columns-wrapper>.columns>div>.columns-img-col img {
+    height: 100%;
+  }
+
 }
 
 /* brand */
@@ -309,4 +419,5 @@ header nav {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  padding: 0;
 }
