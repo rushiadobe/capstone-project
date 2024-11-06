@@ -374,12 +374,12 @@ main>.section-registration-form>.form-wrapper {
   width: calc(100% - 600px);
   padding: 10px;
   border: 1px solid gray;
-  margin-left: 6rem;
-  margin-top: -2rem;
+  margin-left: 2.6rem;
 }
 
 main>.section-registration-form>.default-content-wrapper {
-  margin: 3.7rem;
+  margin: 2rem;
+  padding: 10px;
 }
 
 main>.section-registration-form>.form-wrapper>.form input {
