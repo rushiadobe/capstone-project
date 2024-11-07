@@ -408,12 +408,21 @@ main>.magazine-section>.columns-wrapper>.columns div:nth-child(2) {
   flex: 1;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 3.5em 2em 2em;
+  padding: 3.5rem 2em 2em;
   max-width: 400px;
+  height: calc(100vh - 115px);
 }
 
 main>.magazine-section>.columns-wrapper>.columns>div {
   gap: 0;
+}
+
+main>.magazine-section>.columns-wrapper>.columns>div>div>h3 {
+  font-family: "Asar", Georgia, "Times New Roman", Times, serif;
+    font-weight: normal;
+    margin-bottom: 13.5px;
+    margin-top: 27px;
+    font-size: xx-large;
 }
 
 main>.magazine-section>.columns-wrapper>.columns>div>.columns-img-col img {
