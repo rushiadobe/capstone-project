@@ -5,7 +5,9 @@ async function getCardlist(articalURL) {
     try {
         const response = await fetch(articalURL);
         const jsonData = await response.json();
-        return jsonData.data;
+        const fData = jsonData.data.filter((data)=>data.template==="articles");
+        //console.log(fData);
+        return fData;
     } catch (error) {
         console.error('Error fetching JSON:', error)
     }

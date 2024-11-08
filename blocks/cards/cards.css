@@ -17,7 +17,7 @@
 
 .article-card .cards-card-body p strong {
   color: #202020;
-  font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 600;
   text-transform: uppercase;
