@@ -9,11 +9,18 @@
 
 .cards>ul>li {
   border: none;
-  background-color: var(--background-color);
 }
 
 .cards .cards-card-body {
   margin: 16px;
+}
+
+.article-card .cards-card-body p strong {
+  color: #202020;
+  font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .cards .cards-card-image {

@@ -284,6 +284,10 @@ header nav .nav-sections ul {
   font-size: var(--body-font-size-s);
 }
 
+header nav .nav-sections .default-content-wrapper>ul>li:active {
+  background: #ffea00;
+}
+
 header nav .nav-sections ul>li {
   font-weight: 500;
 }
