@@ -35,9 +35,7 @@ export default async function decorate(block) {
 
         //assigned data to varibles  
         img.src = data.image;;
-        //console.log(img.src);
         picture.append(img);
-        
         strong.innerHTML = data.title;
         price.innerHTML = data.price;
         description.innerHTML = data.description;
@@ -49,8 +47,6 @@ export default async function decorate(block) {
         divbody.append(strong);
         divbody.append(price);
         divbody.append(description);
-       
-
         li.append(divcontsiner);
         li.append(divbody);
         containerul.append(li);

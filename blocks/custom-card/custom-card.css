@@ -18,17 +18,17 @@
 
 .custom-card .cards-card-body strong {
     color: #202020;
-    font-family: var(--fontFamilySansSerif, "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif);
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 18px;
     font-weight: 600;
     text-transform: capitalize;
 }
 
 .custom-card .cards-card-body p {
-   font-size: 17px;
-   overflow: hidden;
-   text-overflow: ellipsis;
-   white-space: nowrap;
+    font-size: 17px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .custom-card ul li div p {
@@ -36,7 +36,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
- }
+}
 
 .custom-card .cards-card-image {
     line-height: 0;
