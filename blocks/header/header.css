@@ -305,6 +305,29 @@ header nav .nav-sections ul>li>ul>li {
   font-weight: 400;
 }
 
+@media (min-width: 769px) and (max-width: 899px) {
+  header nav .nav-hamburger {
+    margin: 0 10px;
+    position: absolute;
+    top: 40px;
+  }
+
+  header .nav-brand {
+    grid-area: brand;
+    flex-basis: 30px;
+  }
+
+  header nav p {
+    margin: 0;
+    line-height: 1.8;
+    margin-right: 50px;
+  }
+
+  main>.section:first-of-type {
+    margin-top: 10px;
+  }
+}
+
 @media (width >=900px) {
   header nav .nav-sections {
     display: block;

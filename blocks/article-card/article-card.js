@@ -5,7 +5,7 @@ async function getCardlist(articalURL) {
     try {
         const response = await fetch(articalURL);
         const jsonData = await response.json();
-        const fData = jsonData.data.filter((data)=>data.template==="articles");
+        const fData = jsonData.data.filter((data) => data.template === "articles");
         //console.log(fData);
         return fData;
     } catch (error) {
@@ -26,41 +26,33 @@ export default async function decorate(block) {
         const li = document.createElement('li');
 
         //created div for image 
-        const divcontsiner = document.createElement('div');
+        const alldetails = document.createElement('div');
+        alldetails.className = 'cards-card-body';
         const picture = document.createElement('picture');
         const img = document.createElement('img');
 
         //created div for card body
-        const divbody = document.createElement('div');
-        const strong = document.createElement('strong');
+        const title = document.createElement('strong');
         const description = document.createElement('p');
 
         //assigned data to varibles
         img.src = data.image
         picture.append(img)
-        strong.innerHTML = data.title;
+        title.innerHTML = data.title;
         description.innerHTML = data.description;
-
-        //appended to card body title and description
-        divbody.append(strong);
-        divbody.append(description);
 
         //appended and optimized image
         const pictureElement = createOptimizedPicture(data.image, data.title);
-        divcontsiner.appendChild(pictureElement);
+        alldetails.appendChild(pictureElement);
 
-        li.append(divcontsiner);
-        li.append(divbody);
+        //appended to card body title and description
+        alldetails.append(title);
+        alldetails.append(description);
+
+        li.append(alldetails);
+        li.append(alldetails);
         containerul.append(li);
     });
-
-    const li = containerul.querySelector('li');
-    [...li.children].forEach((div) => {
-        if (div.children.length === 1 && div.querySelector('picture')) div.className = 'cards-card-image';
-        else div.className = 'cards-card-body';
-    });
-
-    containerul.querySelectorAll('picture > img').forEach((img) => img.closest('picture').replaceWith(createOptimizedPicture(img.src, img.alt, false, [{ width: '750' }])));
     block.textContent = '';
     block.append(containerul);
 }
